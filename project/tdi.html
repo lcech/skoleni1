@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Twinstone.org</title>
+	<link rel="shortcut icon" href="../images/favicon.png">
+	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../stylesheets/fontello.css"/>
+	<link rel="stylesheet" href="../stylesheets/twinstone.css"/>
+</head>
+<body>
+	<div id="page" class="container">
+		<div id="page-h" class="row"> 
+			<div id="logo" class="span3">
+				<a href="../index.html"><img src="../images/logo.png"></a>
+			</div>
+			<div id="main-nav" class="span9">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="container">
+							<a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</a>
+							<div class="nav-collapse collapse navbar-responsive-collapse">
+								<ul class="nav">
+									<li class="dropdown">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#"><strong>Projects</strong> <span class="icon expand"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="../project/tdi.html">TDI</a></li>
+											<li><a href="../project/bflow.html">Boss Flow</a></li>
+										</ul>
+									</li>
+									<li class="divider-vertical"></li>
+									<li><a href="https://issues.twinstone.org"><span class="icon bug"></span>Issues</a></li>
+									<li><a href="https://wiki.twinstone.org"><span class="icon doc"></span>Wiki</a></li>
+									<li><a href="https://repo.twinstone.org"><span class="icon cloud"></span>Repositories</a></li>
+								</ul>
+								<ul class="nav pull-right">
+									<li><a href="../login.html"><span class="icon login"></span>Login</a></li>
+								</ul>
+							</div><!-- /.nav-collapse -->
+						</div>
+					</div><!-- /navbar-inner -->
+				</div>
+			</div>
+		</div>
+		<div id="page-c">
+			<h1>TDI</h1>
+			<div class="row">
+				<div class="span9">
+					<p class="lead">TDI - Turbocharged DOM Infusion. Pragmatic approach to HMTL page DOM updating while page state is still kept on server.</p>
+					<p>TDI is an AJAX javascript library which:</p>
+					<ul>
+						<li>automaticaly processes user actions (clicks, submits, ...)</li>
+						<li>uses a <a href="https://wiki.twinstone.org/pages/viewpage.action?pageId=2981897">standardized protocol</a> to comunicate with server</li>
+						<li>automaticaly executes server instructions</li>
+						<li>allows to execute multiple server instructions triggered by one user action</li>
+					</ul>
+					<h2>Why TDI?</h2>
+					<p>Contrary to the common approach, TDI moves the decision of what to modify in UI from client to server. That means, that the server, after it recieves the AJAX request:</p>
+					<ul>
+						<li>processes the request and executes the requested actions (adds a DB record, sends email, ...)</li>
+						<li>in the response sends the user <a href="https://wiki.twinstone.org/pages/viewpage.action?pageId=2981897">a set of instructions on how to modify the UI</a> (add a new item to the basket, show a user message, execute a script, add a new style, reload the page, ...)</li>
+					</ul>
+					<p>This allows to have one small and uniform piece of javascript, which:</p>
+					<ul>
+						<li>processes the user action (click on a link, submission of a form) and sends a request to the server</li>
+						<li>recieves and executes the <a href="https://wiki.twinstone.org/pages/viewpage.action?pageId=2981897">server instructions</a> to modify the page UI (add a new item to the basket, show a user message, ...)</li>
+					</ul>
+					<p class="text-center"><img src="https://wiki.twinstone.org/download/attachments/2981891/wf.png"></p>
+				</div>
+				<div class="span3">
+					<ul class="nav nav-tabs nav-stacked">
+						<li><a href="https://issues.twinstone.org/browse/TDI">Issues</a></li>
+						<li><a href="https://wiki.twinstone.org/display/TDI">Wiki</a></li>
+						 <li><a href="https://repo.twinstone.org/projects/TWINT/repos/tdi/browse">Repository</a></li>
+						<li><a href="https://sources.twinstone.org/browse/Twinstone-TDI">Sources</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		<div id="page-f" class="row">
+			<div class="span12">
+				&copy; Etnetera a.s.
+			</div>
+		</div>
+	</div>
+	
+	<script src="../javascripts/jquery.js"></script>
+	<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

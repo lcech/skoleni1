@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "fontello";
+	src: url("../fonts/fontello.eot?85478060");
+	src: url("../fonts/fontello.eot?85478060#iefix") format("embedded-opentype"),
+	     url("../fonts/fontello.woff?85478060") format("woff"),
+	     url("../fonts/fontello.ttf?85478060") format("truetype"),
+	     url("../fonts/fontello.svg?85478060#fontello") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon {
+	display: inline-block;
+	margin-right: 5px;
+}
+.icon:before {
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	text-align: center;
+	font-size: 120%;
+	vertical-align: text-top;
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+}
+
+.icon.cloud:before { content: '\e813'; }
+.icon.projects:before { content: '\e810'; }
+.icon.doc:before { content: '\e811'; }
+.icon.expand:before { content: '\e812'; }
+.icon.bug:before { content: '\e814'; }
+.icon.login:before { content: '\e801'; }
+.icon.logout:before { content: '\e802'; }
+.icon.user:before { content: '\e800'; } 
